@@ -11,8 +11,8 @@ public class Main {
         contaLuisa.depositar(2715.00);
         contaLuisa.calcularRendimentos();
         contaLuisa.exibirInformacoes();
-        contaLuisa.sacar(500); // Simula um saque de R$ 500
-        contaLuisa.exibirInformacoes(); // Exibe as informações atualizadas após o saque
+        contaLuisa.sacar(500);
+        contaLuisa.exibirInformacoes();
 
         System.out.println("Nome do titular: " + contaFrancisco.nomeCliente);
         contaFrancisco.depositar(2713.00);
