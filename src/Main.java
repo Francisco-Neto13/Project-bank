@@ -5,6 +5,12 @@ public class Main {
 
         Conta contaFrancisco = new Conta("Francisco", 145678, 3451, 1234, "13/08/2023");
 
+        Gerente	gerente	= new Gerente();
+
+        gerente.setNome("Lucas Zonzini Lisboa");
+        gerente.setSenha(4002);
+
+
         System.out.println("Total de contas criadas: " + Conta.getTotalContas());
 
         System.out.println("Nome do titular: " + contaLuisa.nomeCliente);
@@ -20,5 +26,12 @@ public class Main {
         contaFrancisco.exibirInformacoes();
         contaFrancisco.sacar(250);
         contaFrancisco.exibirInformacoes();
+
+        System.out.println("Bonificação" + gerente.getBonificacao());
+
     }
+
 }
+
+
+
