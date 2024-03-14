@@ -1,10 +1,10 @@
 package general.projeto;
 
-class Cliente	{
-    private	String nome;
-    private	String endereco;
-    private	String cpf;
-    private int	idade;
+class Cliente {
+    private String nome;
+    private String endereco;
+    private String cpf;
+    private int idade;
 
     public String getNome() {
         return nome;
@@ -22,14 +22,14 @@ class Cliente	{
         return idade;
     }
 
-    public	void mudaCPF(String	cpf) {
-        if	(this.idade	<=	60)	{
+    public void mudaCPF(String cpf) {
+        if (this.idade <= 60) {
             validaCPF(cpf);
         }
-        this.cpf	=	cpf;
-    }
-    private	void	validaCPF(String	cpf) {
+        this.cpf = cpf;
     }
 
+    private void validaCPF(String cpf) {
 
+    }
 }
