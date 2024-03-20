@@ -5,32 +5,39 @@ public class Funcionario	{
     protected String cpf;
     protected double salario;
     protected double bonificacao;
+    protected int senha;
 
-    public String getNome() {
+    protected String getNome() {
         return nome;
     }
 
-    public void setNome(String nome) {
+    protected void setNome(String nome) {
         this.nome = nome;
     }
 
-    public String getCpf() {
+    protected String getCpf() {
         return cpf;
     }
 
-    public void setCpf(String cpf) {
+    protected void setCpf(String cpf) {
         this.cpf = cpf;
     }
 
-    public double getSalario() {
+    protected double getSalario() {
         return salario;
     }
 
-    public void setSalario(double salario) {
+    protected void setSalario(double salario) {
         this.salario = salario;
     }
 
-    public double getBonificacao() {
+    protected void setSenha(int senha) {
+        this.senha = senha;
+    }
+    protected int getSenha() {
+        return senha;
+    }
+    protected double getBonificacao() {
         return this.salario * 0.1;
     }
 }

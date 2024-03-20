@@ -1,7 +1,7 @@
 package general.projeto;
 
 public class Conta {
-    public String nomeCliente;
+    private String nomeCliente;
     private int numeroConta;
     private int numeroAgencia;
     private double saldoConta;
@@ -40,13 +40,20 @@ public class Conta {
         System.out.println("Seu rendimento é de R$" + String.format("%.2f", rendimento));
     }
 
-
     public void exibirInformacoes() {
         System.out.println("Nome do cliente: " + nomeCliente);
         System.out.println("Número da conta: " + numeroConta);
         System.out.println("Número da agência: " + numeroAgencia);
         System.out.println("Saldo da conta R$: " + saldoConta);
         System.out.println("Data de abertura da conta: " + dataAberturaConta);
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
     }
 
     public static int getTotalContas() {
