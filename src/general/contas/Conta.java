@@ -1,4 +1,4 @@
-package general.projeto;
+package general.contas;
 
 public class Conta {
     private String nomeCliente;
@@ -15,6 +15,46 @@ public class Conta {
         this.saldoConta = saldoConta;
         this.dataAberturaConta = dataAberturaConta;
         totalContas++;
+    }
+
+    public String getNomeCliente() {
+        return nomeCliente;
+    }
+
+    public void setNomeCliente(String nomeCliente) {
+        this.nomeCliente = nomeCliente;
+    }
+
+    public int getNumeroConta() {
+        return numeroConta;
+    }
+
+    public void setNumeroConta(int numeroConta) {
+        this.numeroConta = numeroConta;
+    }
+
+    public int getNumeroAgencia() {
+        return numeroAgencia;
+    }
+
+    public void setNumeroAgencia(int numeroAgencia) {
+        this.numeroAgencia = numeroAgencia;
+    }
+
+    public double getSaldoConta() {
+        return saldoConta;
+    }
+
+    public void setSaldoConta(double saldoConta) {
+        this.saldoConta = saldoConta;
+    }
+
+    public String getDataAberturaConta() {
+        return dataAberturaConta;
+    }
+
+    public void setDataAberturaConta(String dataAberturaConta) {
+        this.dataAberturaConta = dataAberturaConta;
     }
 
     public void depositar(double valor) {
@@ -46,14 +86,6 @@ public class Conta {
         System.out.println("Número da agência: " + numeroAgencia);
         System.out.println("Saldo da conta R$: " + saldoConta);
         System.out.println("Data de abertura da conta: " + dataAberturaConta);
-    }
-
-    public String getNomeCliente() {
-        return nomeCliente;
-    }
-
-    public void setNomeCliente(String nomeCliente) {
-        this.nomeCliente = nomeCliente;
     }
 
     public static int getTotalContas() {

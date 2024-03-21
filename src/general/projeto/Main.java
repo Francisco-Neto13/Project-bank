@@ -1,5 +1,7 @@
 package general.projeto;
 
+import general.contas.Conta;
+
 public class Main {
     public static void main(String[] args) {
         Conta contaLuisa = criarConta("Luisa", 987654, 1234, 1500, "15/01/2023");
